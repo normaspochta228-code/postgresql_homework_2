@@ -8,7 +8,6 @@
 2) Выберите имена и фамилии всех гонщиков и общее количество их очков, набранных по результатам гонок, и расставьте их в порядке убывания.
 */
 
-
 -- 1)
 SELECT racers.id, name, surname, birth_date, country, count_wins, results.points ,results.laps_lead
 FROM racers
