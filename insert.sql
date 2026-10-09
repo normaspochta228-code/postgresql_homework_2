@@ -9,8 +9,6 @@
 */
 
 
-
-
 -- Гран-при
 INSERT INTO events (id, season_year, round_number, name, event_date, country, place) VALUES
 (1, 2024, 1, 'Bahrain Grand Prix', '2024-03-02', 'Bahrain', 'Bahrain International Circuit'),
