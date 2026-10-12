@@ -13,11 +13,11 @@ SELECT racers.id, name, surname, birth_date, country, count_wins, results.points
 FROM racers
 JOIN results ON racers.id = results.racer_id
 WHERE position = 1 AND points < 26
-ORDER BY laps_lead DESC
+ORDER BY laps_lead DESC;
 
 -- 2)
 SELECT racers.name, racers.surname, COALESCE(SUM(results.points), 0) as sum_points
 FROM racers
 LEFT JOIN results ON racers.id = results.racer_id
 GROUP BY racers.id
-ORDER BY sum_points DESC
+ORDER BY sum_points DESC;
